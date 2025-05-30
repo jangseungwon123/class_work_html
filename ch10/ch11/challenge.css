@@ -1,0 +1,28 @@
+   h2 {
+    text-align: center;
+    background-color: chartreuse;
+    font-weight: bold;
+}
+   /* 문제 1: 메뉴 링크에 마우스 오버 시  */
+    .menu a:hover{
+        color: red;
+    }
+    /* 문제 2: 로그인 폼 입력창에 포커스 시 */
+    .login-form input:focus{
+        
+        border: 2px solid blue;
+        color: blue;
+        outline: none;
+    }
+    /* 문제 3 : 랭킹 리스트의 첫 번째 항목 */
+    .ranking li:first-child{
+        color: gold;
+    }
+    /*  문제 4: 랭킹 리스트의 마지막 항목*/
+    .ranking li:last-child{
+        color: red;
+    }
+    /* 문제 랭킹리스트의 3번째 항목 */
+    .ranking li:nth-child(3) {
+        color: green;
+    }

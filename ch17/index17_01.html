@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>우주 탐험</title>
+    <style>
+      body {
+        background-color: black;
+        margin: 0;
+        padding: 0;
+        /* static(기본값, 문서에 흐름 - block ,inline) */
+        position: static;
+      }
+      @keyframes star {
+        0% {
+          transform: translate(0, 0);
+          opacity: 1;
+        }
+        85% {
+          transform: translate(-100px, 100px);
+          opacity: 1;
+        }
+        95% {
+          opacity: 0; /* 사라졌다가 */
+        }
+        100% {
+          transform: translate(0, 0);
+          opacity: 1; /* 바로 시작 위치로 돌아오며 다시 나타남 */
+        }
+      }
+
+      .star {
+        position: absolute;
+        font-size: 30px;
+        animation: star 3s ease-in-out infinite;
+      }
+      .planet {
+        width: 100px;
+        height: 100px;
+        font-size: 150px;
+        position: absolute;
+        top: 100px;
+        left: 200px;
+      }
+
+      .spaceship {
+        /* fixed - 문서의 흐름에서 벗어나면 화면 기준으로 top,left,right,bottom으로 
+            지정 가능  스크롤을 움직여도 화면 기준으로 고정이 된다*/
+        position: fixed;
+        top: 300px;
+        right: 500px;
+        font-size: 40px;
+        z-index: 1000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="star" style="top: 50px; left: 100px">☄️</div>
+    <div class="star" style="top: 450px; left: 350px">🌠</div>
+    <div class="star" style="top: 300px; left: 150px">☄️</div>
+    <div class="star" style="top: 1200px; left: 450px">🌠</div>
+    <div class="star" style="top: 100px; left: 250px">🌠</div>
+    <div class="star" style="top: 230px; left: 350px">☄️</div>
+    <div class="star" style="top: 540px; left: 350px">🌠</div>
+    <div class="star" style="top: 700px; left: 350px">🌠</div>
+    <div class="star" style="top: 760px; left: 250px">☄️</div>
+    <div class="star" style="top: 800px; left: 550px">🌠</div>
+    <div class="star" style="top: 100px; left: 650px">☄️</div>
+    <div class="star" style="top: 130px; left: 750px">🌠</div>
+    <div class="star" style="top: 260px; left: 550px">☄️</div>
+    <div class="star" style="top: 300px; left: 950px">🌠</div>
+    <div class="star" style="top: 3900px; left: 1000px">☄️</div>
+    <div class="star" style="top: 100px; left: 800px">🌠</div>
+    <div class="planet">🌕</div>
+    <div class="spaceship">🚀</div>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>숨바꼭잘 게임</title>
+    <style>
+        .card{
+            border: 2px solid #333;
+            padding: 10px;
+            margin: 5px;
+            background-color: #f0f0f0;
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            text-align: center;
+        }
+        .hidden {
+            visibility: hidden;
+        }
+        
+        .none {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+   <h2>숨바꼭질 게임</h2>
+   <button onclick="toggleVisibility()">고양이 숨기기/보이기(visibility)</button>
+   <button onclick="toggleDisplay()">강아지 숨기기/보이기 (display)</button> 
+
+   <div class="card" id="dog">🐕강아지</div>
+   <div class="card" id="cat">🐈고양이</div>
+   
+
+   <script>
+        // 자바 스크립트 문법을 작성할 수 있다.
+        // document는 브라우저가 로드한 웹 페이지(HTML 문서) 전체를 의미하는 객체입니다.
+        //JavaScript가 HTML과 상호작용할 수 있도록 해주는 "창구" 역할을 해요.
+        function toggleVisibility() {
+            var cat = document.getElementById('cat')
+            cat.classList.toggle('hidden')
+        }
+        function toggleDisplay() {
+            var dog = document.getElementById('dog')
+            dog.classList.toggle('none')
+        }
+
+   </script>
+</body>
+</html>
