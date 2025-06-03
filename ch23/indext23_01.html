@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;            
+        }
+        header,main,footer{
+            padding: 20px;
+            text-align: center;
+        }
+        header{
+            background-color: blue;
+            color: white;
+
+        }
+        main{
+            background-color: yellow;
+        }
+        footer{
+            background-color: aquamarine;
+        }
+        /* 스마트 폰 사이즈 일 때 */
+
+        @media (min-width: 600px) {
+            header{
+                font-size: 40px;
+            }
+            main{
+                font-size: 40px;
+            }
+            footer{
+                font-size: 40px;
+            }
+        }
+
+        /* 컴퓨터 화면 사이즈 일 때 */
+
+
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <main>메인 컨텐츠</main>
+    <footer>푸터</footer>
+</body>
+</html>

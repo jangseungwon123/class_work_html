@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body{
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            box-sizing: border-box;
+            
+            
+        }
+        .container{
+            display: flex;
+            flex-wrap: nowrap;
+            /* align-items 한 줄에 대한 교차축 정렬에 설정이고 */
+            /* align-content 는 wrap 속성이 발송했을 때 정렬에 대한 기준이다. */
+            
+            justify-content: space-between;
+            align-content: space-between;
+            height: 400px;
+            background-color: blanchedalmond;
+        }
+        .item1{
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            border: 2px solid black;
+            border-radius: 10px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .item2{
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            border: 2px solid black;
+            border-radius: 10px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .item3{
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            border: 2px solid black;
+            border-radius: 10px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h3>align-content 속성을 더 알아보자</h3>
+
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item1">2</div>
+        <div class="item1">3</div>
+    </div>
+        <div class="container">
+        <div class="item2">4</div>
+        <div class="item2">5</div>
+        <div class="item2">6</div>
+    </div>
+        <div class="container">
+        <div class="item3">7</div>
+        <div class="item3">8</div>
+        <div class="item3">9</div>
+    </div>
+</body>
+</html>
